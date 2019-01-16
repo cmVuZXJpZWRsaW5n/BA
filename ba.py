@@ -18,7 +18,7 @@ techniques = getTechniques()
 @app.route("/")
 def hello():
     return render_template('home_content.html', questions=questions, title="Security by Design")
-
+#
 
 if __name__ == '__main__':
 		app.run(debug=True)
