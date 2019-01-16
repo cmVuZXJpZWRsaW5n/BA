@@ -1,0 +1,11 @@
+{%extends "layout.html" %}
+{% block content %}	
+	{% for q in questions %}
+		<h1>{{ q.title }}</h1>
+
+		{% for a in q.answers %}
+			<p>{{ a }}</p>
+		{% endfor %}
+		
+	{% endfor %}
+{% endblock content %}
